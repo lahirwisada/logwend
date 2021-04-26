@@ -1,7 +1,9 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
-import { from, Observable } from 'rxjs';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Put } from '@nestjs/common';
+import { from, Observable, of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 import { User } from './models/user.interface';
 import { UserService } from './user.service';
+
 
 @Controller('user')
 export class UserController {
@@ -10,13 +12,30 @@ export class UserController {
     }
 
     @Post()
-    create(@Body()user: User): Observable<User>{
-        return this.userService.create(user);
+    create(@Body()user: User): Observable<User | Object>{
+        return this.userService.create(user).pipe(
+            map((user: User) => user),
+            catchError(err => of({error: err.message}))
+        );
+    }
+
+    @Post('login')
+    login(@Body() user: User): Observable<Object> {
+        return this.userService.login(user).pipe(
+            map((jwt: string) => {
+                return {access_token: jwt};
+            })
+        )
     }
 
     @Get(':id')
-    findOne(@Param()params): Observable<User>{
-        return this.userService.findOne(params.id);
+    findOne(@Param('id', ParseIntPipe) id: number): Observable<User>{
+        return this.userService.findOne(id);
+    }
+
+    @Get('/:id/:username')
+    findUsername(@Param('id') id: number, @Param('username') username: string): Observable<User>{
+        return this.userService.findByUsername(username);
     }
 
     @Get()
