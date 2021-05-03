@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\www\kpk\logwend\mysql-extend\projects\trial-2\src\lws_mysql_udf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\www\kpk\logwend\mysql-extend\projects\trial-2\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\www\kpk\logwend\mysql-extend\projects\trial-2\src\lws_mysql_udf.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AF105A87-886F-3A07-9093-DDAB3AE36EC4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

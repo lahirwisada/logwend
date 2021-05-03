@@ -1,0 +1,6 @@
+LIBRARY		lws_mysql_udf
+VERSION		1.0
+EXPORTS
+  lws_mysql_udf_hello_init
+  lws_mysql_udf_hello_deinit
+  lws_mysql_udf_hello

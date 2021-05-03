@@ -1,0 +1,3 @@
+D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/CMakeFiles/lws_mysql_udf.dir
+D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/CMakeFiles/ALL_BUILD.dir
+D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\www\kpk\logwend\mysql-extend\projects\trial-2\src\CMakeFiles\b0074c24c0e30b812737cde5ee4eeed7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F0464033-6509-3FC5-8C49-2117752E01F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

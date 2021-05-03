@@ -1,0 +1,10 @@
+^D:\WWW\KPK\LOGWEND\MYSQL-EXTEND\PROJECTS\TRIAL-2\SRC\CMAKEFILES\B0074C24C0E30B812737CDE5EE4EEED7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/www/kpk/logwend/mysql-extend/projects/trial-2/src -BD:/www/kpk/logwend/mysql-extend/projects/trial-2/src --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/lws_mysql_udf_hello.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

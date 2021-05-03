@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/CMakeLists.txt
+  lws_mysql_udf.cpp
+D:\www\kpk\logwend\mysql-extend\projects\trial-2\src\lws_mysql_udf.cpp(50,12): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     Creating library D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/Release/lws_mysql_udf.lib and object D:/www/kpk/logwend/mysql-extend/projects/trial-2/src/Release/lws_mysql_udf.exp
+  lws_mysql_udf.vcxproj -> D:\www\kpk\logwend\mysql-extend\projects\trial-2\src\Release\lws_mysql_udf.dll
